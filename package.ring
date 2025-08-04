@@ -15,8 +15,8 @@ aPackageInfo = [
 	],
 	:libs = 	[
 		[
-			:name = "",
-			:version = "",
+			:name = "gameengine",
+			:version = "1.0",
 			:providerusername = ""
 		]
 	],
@@ -84,4 +84,5 @@ aPackageInfo = [
 	:fedoraremove = ""
 
 ]
+
 
