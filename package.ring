@@ -66,7 +66,7 @@ aPackageInfo = [
 	:macosringfolderfiles = 	[
 
 	],
-	:run = "ring main.ring",
+	:run = "ring tictactoeplus.ring",
 	:windowsrun = "",
 	:linuxrun = "",
 	:macosrun = "",
@@ -84,4 +84,5 @@ aPackageInfo = [
 	:macosremove = "",
 	:ubunturemove = "",
 	:fedoraremove = ""
+
 ]
