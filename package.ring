@@ -15,8 +15,8 @@ aPackageInfo = [
 	],
 	:libs = 	[
 		[
-			:name = "gameengine",
-			:version = "1.0.3",
+			:name = "RingQt",
+			:version = "1.0.0",
 			:providerusername = ""
 		]
 	],
@@ -84,6 +84,7 @@ aPackageInfo = [
 	:fedoraremove = ""
 
 ]
+
 
 
 
