@@ -15,16 +15,13 @@ aPackageInfo = [
 	],
 	:libs = 	[
 		[
-			:name = "",
-			:version = "",
+			:name = "RingQt",
+			:version = "1.0.0",
 			:providerusername = ""
 		]
 	],
 	:files = 	[
-		"lib.ring",
-		"main.ring",
 		"Black.jpg",
-		"TicTacBatch.bat",
 		"TicTacToePlus.ring",
 		"White.jpg"
 	],
@@ -85,4 +82,5 @@ aPackageInfo = [
 	:macosremove = "",
 	:ubunturemove = "",
 	:fedoraremove = ""
+
 ]
