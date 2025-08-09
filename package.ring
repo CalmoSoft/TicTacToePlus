@@ -1,4 +1,4 @@
-PackageInfo = [
+aPackageInfo = [
 	:name = "The TicTacToePlus Package",
 	:description = "Our TicTacToePlus package using the Ring programming language",
 	:folder = "TicTacToePlus",
@@ -84,6 +84,7 @@ PackageInfo = [
 	:fedoraremove = ""
 
 ]
+
 
 
 
