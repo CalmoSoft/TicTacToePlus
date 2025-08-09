@@ -1,22 +1,22 @@
-aPackageInfo = [
+PackageInfo = [
 	:name = "The TicTacToePlus Package",
 	:description = "Our TicTacToePlus package using the Ring programming language",
 	:folder = "TicTacToePlus",
 	:developer = "",
 	:email = "",
 	:license = "MIT License",
-	:version = "1.0.8",
+	:version = "1.0.10",
 	:ringversion = "1.23",
 	:versions = 	[
 		[
-			:version = "1.0.8",
+			:version = "1.0.10",
 			:branch = "master"
 		]
 	],
 	:libs = 	[
 		[
 			:name = "RingQt",
-			:version = "1.0.8",
+			:version = "1.0.10",
 			:providerusername = ""
 		]
 	],
@@ -84,6 +84,7 @@ aPackageInfo = [
 	:fedoraremove = ""
 
 ]
+
 
 
 
