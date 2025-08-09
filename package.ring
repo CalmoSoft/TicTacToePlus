@@ -21,9 +21,9 @@ PackageInfo = [
 		]
 	],
 	:files = 	[
-		"Black.jpg",
+		"o.jpg",
 		"TicTacToePlus.ring",
-		"White.jpg"
+		"x.jpg"
 	],
 	:ringfolderfiles = 	[
 
@@ -84,6 +84,7 @@ PackageInfo = [
 	:fedoraremove = ""
 
 ]
+
 
 
 
