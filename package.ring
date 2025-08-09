@@ -5,18 +5,18 @@ PackageInfo = [
 	:developer = "",
 	:email = "",
 	:license = "MIT License",
-	:version = "1.0.12",
+	:version = "1.0.13",
 	:ringversion = "1.23",
 	:versions = 	[
 		[
-			:version = "1.0.12",
+			:version = "1.0.13",
 			:branch = "master"
 		]
 	],
 	:libs = 	[
 		[
 			:name = "RingQt",
-			:version = "1.0.12",
+			:version = "1.0.13",
 			:providerusername = ""
 		]
 	],
@@ -84,6 +84,7 @@ PackageInfo = [
 	:fedoraremove = ""
 
 ]
+
 
 
 
