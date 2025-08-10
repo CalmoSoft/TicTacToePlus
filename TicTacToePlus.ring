@@ -18,7 +18,7 @@ app = new qApp {
 	StyleFusionBlack()
 	win = new qWidget() {
 	setWindowTitle('TicTacToePlus Game')
-        setWinicon(self,"x.jpg")
+    setWinicon(self,"x.jpg")
 	move(360,15)
 	for Row = 1 to C_ROWCOUNT
 		for Col = 1 to C_COLCOUNT
@@ -27,7 +27,7 @@ app = new qApp {
 			setSizePolicy(1,1)
 			setclickevent("showCell(" + string(Row) + "," + string(Col) + ")")
 			settext("---")
-                        setgeometry(Row*40,Col*40,40,40)
+                setgeometry(Row*40,Col*40,40,40)
 	       		aReady[Row][Col] = 0
 		 	}
 	     	 next
@@ -118,4 +118,3 @@ func delPict()
 			aReady[Row][Col] = 0
 		next
 	next
-
