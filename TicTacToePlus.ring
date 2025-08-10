@@ -27,8 +27,8 @@ app = new qApp {
 			setSizePolicy(1,1)
 			setclickevent("showCell(" + string(Row) + "," + string(Col) + ")")
 			settext("---")
-                setgeometry(Row*40,Col*40,40,40)
-	       		aReady[Row][Col] = 0
+            setgeometry(Row*40,Col*40,40,40)
+	        aReady[Row][Col] = 0
 		 	}
 	     	 next
 			
@@ -118,3 +118,4 @@ func delPict()
 			aReady[Row][Col] = 0
 		next
 	next
+
