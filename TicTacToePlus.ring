@@ -18,7 +18,7 @@ app = new qApp {
 	StyleFusionBlack()
 	win = new qWidget() {
 	setWindowTitle('TicTacToePlus Game')
-        setWinicon(self,"x.jpg")
+    setWinicon(self,"x.jpg")
 	move(360,15)
 	for Row = 1 to C_ROWCOUNT
 		for Col = 1 to C_COLCOUNT
@@ -118,3 +118,4 @@ func delPict()
 			aReady[Row][Col] = 0
 		next
 	next
+
