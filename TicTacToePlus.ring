@@ -76,19 +76,19 @@ func checkWinner()
 			if cCell = 0
 				loop
 			ok
-          		if ( nRow + 3 <= C_HEIGHT and cCell=aMap[nRow+1][nCol] and
+			if ( nRow + 3 <= C_HEIGHT and cCell=aMap[nRow+1][nCol] and
 				cCell=aMap[nRow+2][nCol] and cCell=aMap[nRow+3][nCol] ) OR
 
 			   ( nCol + 3 <= C_WIDTH and cCell=aMap[nRow][nCol+1] and
 				cCell=aMap[nRow][nCol+2] and cCell=aMap[nRow][nCol+3] ) OR
 
-		           ( nRow + 3 <= C_HEIGHT and cCell=aMap[nRow+1][nCol+1] and
+	           ( nRow + 3 <= C_HEIGHT and cCell=aMap[nRow+1][nCol+1] and
 				cCell=aMap[nRow+2][nCol+2] and  cCell=aMap[nRow+3][nCol+3] ) OR
 
 			   ( nRow > 3 and nCol <= (C_WIDTH-3)  and cCell=aMap[nRow-1][nCol+1] and
 				cCell=aMap[nRow-2][nCol+2] and  cCell=aMap[nRow-3][nCol+3] )
 
-			     lWin=True exit 2
+			    lWin=True exit 2
 			ok
 		next
 	next
@@ -118,4 +118,5 @@ func delPict()
 			aReady[Row][Col] = 0
 		next
 	next
+
 
