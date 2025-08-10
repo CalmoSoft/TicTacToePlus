@@ -95,9 +95,9 @@ func checkWinner()
 
 	if lWin
 		if cCell = 1
-			msginfo("winner","Blue won!")
+			msginfo("winner","O won!")
 	but cCell = 2
-			msginfo("winner","Red won!")
+			msginfo("winner","X won!")
 	ok
 	app.processEvents()
 	sleep(1)
@@ -118,3 +118,4 @@ func delPict()
 			aReady[Row][Col] = 0
 		next
 	next
+
