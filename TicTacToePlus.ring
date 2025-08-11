@@ -50,7 +50,7 @@ func showCell(Row,Col)
 	aButtons[Row][Col] {
 		if aButtons[Row][Col].text()= "---"
 			aButtons[Row][Col].settext("")
-s			setIcon(new qIcon(new qPixMap(pict)))
+			setIcon(new qIcon(new qPixMap(pict)))
 			setIconSize(new qSize(SqHeight,SqHeight))
 			setstylesheet('background-color:Yellow')
 			setEnabled(true)
@@ -116,5 +116,6 @@ func delPict()
 			aReady[Row][Col] = 0
 		next
 	next
+
 
 
