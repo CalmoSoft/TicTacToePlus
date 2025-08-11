@@ -48,15 +48,15 @@ func showCell(Row,Col)
 	flag = flag + 1
 
 	aButtons[Row][Col] {
-	if aButtons[Row][Col].text()= "---"
-		aButtons[Row][Col].settext("")
-		setIcon(new qIcon(new qPixMap(pict)))
-		setIconSize(new qSize(SqHeight,SqHeight))
-		setstylesheet('background-color:Yellow')
-		setEnabled(true)
-		blockSignals(false)                       ### ??? Goes back to Complement Color ??
-		aReady[Row][Col] = pic    
-	ok
+		if aButtons[Row][Col].text()= "---"
+			aButtons[Row][Col].settext("")
+s			setIcon(new qIcon(new qPixMap(pict)))
+			setIconSize(new qSize(SqHeight,SqHeight))
+			setstylesheet('background-color:Yellow')
+			setEnabled(true)
+			blockSignals(false)                       ### ??? Goes back to Complement Color ??
+			aReady[Row][Col] = pic    
+		ok
 	}
 
 checkWinner()
@@ -116,4 +116,5 @@ func delPict()
 			aReady[Row][Col] = 0
 		next
 	next
+
 
