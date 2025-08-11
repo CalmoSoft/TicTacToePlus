@@ -34,7 +34,7 @@ app = new qApp {
 	next
 	show()
 	}
-	exec()
+		exec()
 	}
 
 func showCell(Row,Col)
@@ -116,8 +116,3 @@ func delPict()
 			aReady[Row][Col] = 0
 		next
 	next
-
-
-
-
-
