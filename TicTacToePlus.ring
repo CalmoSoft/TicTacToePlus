@@ -95,12 +95,12 @@ func checkWinner()
     if lWin
         if cCell = 1
             msginfo("winner","O won!")
-    but cCell = 2
+        but cCell = 2
             msginfo("winner","X won!")
-    ok
-    app.processEvents()
-    sleep(1)
-    newGame()
+        ok
+        app.processEvents()
+        sleep(1)
+        newGame()
     ok
 
   
