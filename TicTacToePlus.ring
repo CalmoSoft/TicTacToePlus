@@ -30,8 +30,7 @@ app = new qApp {
             setgeometry(Row*40,Col*40,40,40)
 	        aReady[Row][Col] = 0
 		 	}
-	     	 next
-			
+		next			
 	next
 	show()
 	}
@@ -118,6 +117,7 @@ func delPict()
 			aReady[Row][Col] = 0
 		next
 	next
+
 
 
 
