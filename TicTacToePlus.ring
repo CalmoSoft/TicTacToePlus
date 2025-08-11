@@ -108,7 +108,6 @@ func newGame()
 	delPict()
 
 func delPict()
-
 	for Row = 1 to C_ROWCOUNT
 		for Col = 1 to C_COLCOUNT
 			aButtons[Row][Col].setIcon(new qIcon(new qPixMap2(0,0)))
@@ -117,6 +116,7 @@ func delPict()
 			aReady[Row][Col] = 0
 		next
 	next
+
 
 
 
