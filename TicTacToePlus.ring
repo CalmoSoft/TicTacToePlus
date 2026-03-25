@@ -7,6 +7,8 @@ C_SPACING = 2
 SqHeight  =  45
 p=0
 flag = 0
+mRow = 1 
+mCol = 1
 aMap = list(15,15)
 
 aReady = list(15,15)
@@ -32,6 +34,20 @@ app = new qApp {
             }
         next
     next
+            aButtonDel = new QPushButton(win) {
+            setstylesheet('background-color:Blue')
+            setSizePolicy(1,1)
+            setclickevent("delCell()")
+            settext("Delete")
+            setgeometry(16*40,40,40,40)
+            }
+
+            aButtonRowCol = new QPushButton(win) {
+            setstylesheet('background-color:Blue')
+            setSizePolicy(1,1)
+            settext(string(mRow) + "," + string(mCol))
+            setgeometry(16*40,80,40,40)
+            }
     show()
     }
     exec()
@@ -46,6 +62,8 @@ func showCell(Row,Col)
         pic=2
     ok
     flag = flag + 1
+    mRow = Row
+    mCol = Col
 
     aButtons[Row][Col] {
     if aButtons[Row][Col].text()= "---"
@@ -54,8 +72,10 @@ func showCell(Row,Col)
         setIconSize(new qSize(SqHeight,SqHeight))
         setstylesheet('background-color:Yellow')
         setEnabled(true)
-        blockSignals(false)                       ### ??? Goes back to Complement Color ??
-        aReady[Row][Col] = pic    
+        blockSignals(false)                     
+        aReady[Row][Col] = pic 
+        mRow = Row
+        mCol = Col
     ok
     }
 
@@ -105,7 +125,7 @@ func checkWinner()
 
   
 func newGame()
-    delPict()
+     delPict()
 
 func delPict()
     for Row = 1 to C_ROWCOUNT
@@ -115,4 +135,18 @@ func delPict()
             aButtons[Row][Col].setstylesheet('background-color:Yellow')
             aReady[Row][Col] = 0
         next
+        showCell(Row,Col)
     next
+
+func delPictOne(Row,Col)
+
+	aButtons[Row][Col].setIcon(new qIcon(new qPixMap2(0,0)))
+	aButtons[Row][Col].settext("---")
+	aButtons[Row][Col].setstylesheet('background-color:Yellow')
+	aReady[Row][Col] = 0
+
+func delCell()
+     delPictOne(mRow,mCol)
+     aButtonRowCol.settext(string(mRow) + "," + string(mCol))
+     sleep(1)
+     flag = flag - 1
