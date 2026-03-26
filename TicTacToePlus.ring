@@ -9,6 +9,8 @@ p=0
 flag = 0
 mRow = 1 
 mCol = 1
+fontsize1 = 20
+fontsize2 = 15
 aMap = list(15,15)
 
 aReady = list(15,15)
@@ -39,14 +41,16 @@ app = new qApp {
             setSizePolicy(1,1)
             setclickevent("delCell()")
             settext("Delete")
-            setgeometry(16*40,40,40,40)
+            setFont(new qFont("Calibri",fontsize1,100,0))
+            setgeometry(16*40,40,80,40)
             }
 
             aButtonRowCol = new QPushButton(win) {
             setstylesheet('background-color:Blue')
             setSizePolicy(1,1)
             settext(string(mRow) + "," + string(mCol))
-            setgeometry(16*40,80,40,40)
+            setFont(new qFont("Calibri",fontsize2,100,0))
+            setgeometry(16*40,80,80,40)
             }
     show()
     }
